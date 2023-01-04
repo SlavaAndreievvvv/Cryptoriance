@@ -1,0 +1,64 @@
+@use 'utils';
+
+.card {
+  min-height: 287px;
+  flex: 0 0 289px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: utils.$color-black-3;
+  border-radius: 10px;
+  padding-left: 10.5px;
+  padding-right: 10.5px;
+  position: relative;
+  scroll-snap-align: start;
+  margin-right: 50px;
+  scroll-margin-left: 16px;
+  @include utils.media('tablet') {
+    flex: 0 0 440px;
+    min-height: 440px;
+    margin-right: 125px;
+    scroll-margin-left: 64px;
+  }
+  &--ml {
+    margin-left: 16px;
+    @include utils.media('tablet') {
+      margin-left: 64px;
+    }
+  }
+  &--scroll-end {
+    scroll-snap-align: end;
+    scroll-margin-right: 62px;
+    margin-right: 62px;
+    @include utils.media('tablet') {
+      scroll-margin-right: 100px;
+      margin-right: 100px;
+    }
+  }
+
+  &__shadow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: -35px;
+    left: 35px;
+    z-index: -1;
+    border-radius: 10px;
+
+    border: 2px solid transparent;
+    background: utils.$gradient-padding padding-box,
+    utils.$gradient-border border-box;
+  }
+  &__img {
+    margin-bottom: 24px;
+  }
+  &__title {
+    margin-bottom: 16px;
+    @include utils.text(utils.rem(20px), 500, utils.$color-white, 24px);
+  }
+  &__description {
+    @include utils.text(utils.rem(16px), 400, utils.$color-grey, 160%);
+    text-align: center;
+  }
+}

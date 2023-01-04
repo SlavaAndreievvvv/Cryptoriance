@@ -2,15 +2,475 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cryptoriance</title>
     <link rel="stylesheet" href="./scss/style.scss" />
   </head>
   <body>
-    <div class="container index-page">
-      <h1 class="title index-page__title">Cryptoriance-test</h1>
-      <a href="https://merge.rocks" target="_blank" class="cover">
-        <img src="./assets/images/cover.png" alt="merge" />
-      </a>
+    <header class="header header--fixed header--top container">
+      <a class="logo" href="#top"
+        ><img class="logo__img" src="./assets/svg/Logo.svg" alt="logo"
+      /></a>
+      <nav class="navigation">
+        <a class="navigation__link link" href="/">Log in</a>
+        <button class="navigation__button">Get started</button>
+      </nav>
+      <label class="menu">
+        <input class="menu__checkbox" type="checkbox" />
+        <span class="burger">
+          <span class="burger__item"></span>
+        </span>
+        <span class="menu__wrapper">
+          <span class="menu__card">
+            <span class="menu__item"
+              ><a class="menu__link" href="/">Features</a></span
+            >
+            <span class="menu__item"
+              ><a class="menu__link" href="/">Testimonials</a></span
+            >
+            <span class="menu__item"
+              ><a class="menu__link" href="/">News</a></span
+            >
+            <span class="menu__item"
+              ><a class="menu__link" href="/">Privacy Policy</a></span
+            >
+            <span class="menu__item"
+              ><a class="menu__link" href="/">Terms of Use</a></span
+            >
+          </span>
+        </span>
+      </label>
+    </header>
+    <div class="wrapper">
+      <section class="hero-section container" id="top">
+        <div class="hero-section__content">
+          <h1 class="title hero-section__title">Be the part of revolution</h1>
+          <p class="subtitle hero-section__subtitle">
+            Join the world’s most comprehensive and secure trading platform. Buy
+            and sell Bitcoin, Ethereum, XRP and many other cryptocurrencies with
+            fiat or crypto.
+          </p>
+          <button class="button hero-section__button">
+            <svg class="button__img">
+              <use xlink:href="#arrow-button" />
+            </svg>
+            Get started now
+          </button>
+        </div>
+        <div class="hero-section__wrapper-img">
+          <img
+            class="hero-section__grafic"
+            src=".//assets/svg/grafic(hero).svg"
+            alt="graffic"
+          />
+          <img
+            class="hero-section__bitcoin"
+            src=".//assets/svg/Bitcoincash(hero).svg"
+            alt="bitcoin"
+          />
+          <img
+            class="hero-section__ethereum"
+            src=".//assets/svg/Ethereum(hero).svg"
+            alt="ethereum"
+          />
+          <img
+            class="hero-section__line"
+            src=".//assets/svg/line(hero).svg"
+            alt="line"
+          />
+        </div>
+      </section>
     </div>
+    <section class="slider-section container">
+      <p class="caption slider-section__caption">Features</p>
+      <h2 class="title slider-section__title">
+        Every revolution needs a leader
+      </h2>
+      <div class="slider-section__slider">
+        <div class="slider-section__card card card--ml">
+          <img class="card__img" src="../src/assets/svg/lock.svg" alt="lock" />
+          <p class="card__title">Security first</p>
+          <p class="card__description">
+            When choosing an exchange, trust matters. That’s why security has
+            been and will always be our top consideration.
+          </p>
+          <div class="card__shadow"></div>
+        </div>
+        <div class="slider-section__card card">
+          <img class="card__img" src="../src/assets/svg/lock.svg" alt="lock" />
+          <p class="card__title">Security first</p>
+          <p class="card__description">
+            When choosing an exchange, trust matters. That’s why security has
+            been and will always be our top consideration.
+          </p>
+          <div class="card__shadow"></div>
+        </div>
+        <div class="slider-section__card card card--scroll-end">
+          <img class="card__img" src="../src/assets/svg/lock.svg" alt="lock" />
+          <p class="card__title">Security first</p>
+          <p class="card__description">
+            When choosing an exchange, trust matters. That’s why security has
+            been and will always be our top consideration.
+          </p>
+          <div class="card__shadow"></div>
+        </div>
+      </div>
+    </section>
+    <section class="features-section container">
+      <div class="features-section__crypto-block crypto-block crypto-block-1">
+        <div class="crypto-block-1__content">
+          <h3 class="crypto-block__title crypto-block-1__title title">
+            Cryptoriance is easy and straightforward
+          </h3>
+          <p class="crypto-block__subtitle crypto-block-1__subtitle subtitle">
+            We value our customers very much, so we made the application as easy
+            to understand and easy to use as possible. In a short time, you can
+            become a professional level specialist
+          </p>
+          <button class="crypto-block-1__button button--secondary">
+            <svg class="button__img--secondary">
+              <use xlink:href="#arrow-button" />
+            </svg>
+            Go to swap now
+          </button>
+        </div>
+        <div class="crypto-block-1__circle circle">
+          <p class="circle__text circle__text--1">Investment</p>
+          <p class="circle__text circle__text--2">Tracking</p>
+          <p class="circle__text circle__text--3">Output</p>
+          <img
+            class="circle__arrow circle__arrow--1"
+            src="../src/assets/svg/arrow-circle.svg"
+            alt="arrow-circle"
+          />
+          <img
+            class="circle__arrow circle__arrow--2"
+            src="../src/assets/svg/arrow-circle.svg"
+            alt="arrow-circle"
+          />
+          <img
+            class="circle__arrow circle__arrow--3"
+            src="../src/assets/svg/arrow-circle.svg"
+            alt="arrow-circle"
+          />
+          <img
+            class="circle__num circle__num--1"
+            src="../src/assets/svg/num-one.svg"
+            alt="num-one"
+          />
+          <img
+            class="circle__num circle__num--2"
+            src="../src/assets/svg/num-two.svg"
+            alt="num-two"
+          />
+          <img
+            class="circle__num circle__num--3"
+            src="../src/assets/svg/num-three.svg"
+            alt="num-three"
+          />
+        </div>
+      </div>
+      <div class="feature-section__crypto-block crypto-block crypto-block-2">
+        <div class="crypto-block-2__content">
+          <h4 class="crypto-block__title crypto-block-2__title title">
+            Now a new revolution is starting called DeFi
+          </h4>
+          <p class="crypto-block__subtitle crypto-block-2__subtitle subtitle">
+            Most of the existing DeFi are built on the Ethereum blockchain and
+            the number of new applications in the field of decentralized finance
+            is steadily growing. So, in early February, the number of Ethereum
+            blocked on smart contracts for DeFi applications reached $ 938.
+          </p>
+          <button
+            class="crypto-block__button crypto-block-2__button button--secondary"
+          >
+            <svg class="button__img--secondary">
+              <use xlink:href="#arrow-button" />
+            </svg>
+            Go to swap now
+          </button>
+        </div>
+        <div class="crypto-block-2__img">
+          <div class="crypto-block-2__img-converter"></div>
+          <div class="crypto-block-2__img-converter-behined"></div>
+        </div>
+      </div>
+      <div class="feature-section__crypto-block crypto-block crypto-block-3">
+        <div class="crypto-block__content crypto-block-3__content">
+          <h5 class="crypto-block__title crypto-block-3__title title">
+            Try to swap easily and quickly crypto like a PRO
+          </h5>
+          <p class="crypto-block__subtitle crypto-block-3__subtitle subtitle">
+            Cryptorio has the ability to launch new pools as it is an automated
+            market maker that can utilize smart routing and can give its clients
+            the best swapping rates, slippage and price impact that is
+            avialable.
+          </p>
+          <button
+            class="crypto-block__button crypto-block-3__button button--secondary"
+          >
+            <svg class="button__img--secondary">
+              <use xlink:href="#arrow-button" />
+            </svg>
+            Go to swap now
+          </button>
+        </div>
+        <div class="crypto-block-3__img"></div>
+      </div>
+    </section>
+    <section class="trade-section">
+      <p class="caption trade-section__caption container">Powerful tools</p>
+      <h1 class="title trade-section__title container">
+        Trade with confidence
+      </h1>
+      <p class="subtitle trade-section__subtitle container">
+        Trade our spot and margin markets with advanced funding options,
+        lightning fast execution and deep liquidity.
+      </p>
+      <form class="trade-section__tools tools container">
+        <label class="tools__label">
+          <input class="tools__radio" type="radio" name="tools" checked />
+          <span class="tools__line"></span>
+          <span class="tools__text">Key features</span>
+        </label>
+        <label class="tools__label">
+          <input class="tools__radio" type="radio" name="tools" />
+          <span class="tools__line"></span>
+          <span class="tools__text">Asset classes</span>
+        </label>
+        <label class="tools__label">
+          <input class="tools__radio" type="radio" name="tools" />
+          <span class="tools__line"></span>
+          <span class="tools__text">Interface</span>
+        </label>
+      </form>
+      <div class="tools__tablet-line"></div>
+      <div class="tools__img"></div>
+    </section>
+    <section class="reviews-section container">
+      <h1 class="reviews-section__title title">
+        We are only as good, as our clients say we are
+      </h1>
+      <div class="reviews-section__slider slider-reviews">
+        <div class="reviews-section__card card-reviews card-reviews--first">
+          <div class="card-reviews__photo">
+            <img
+              class="card-reviews__img"
+              src="./assets/svg/ava-1.svg"
+              alt="avatar"
+            />
+          </div>
+          <div class="card-reviews__avatar">
+            <p class="card-reviews__name">Kautilya Reddy</p>
+            <p class="card-reviews__email">@reddyzzz</p>
+            <p class="card-reviews__review">
+              Loved the onboarding experience!... As soon as I signed up...I got
+              a call regarding my verification procedure, which was also swiftly
+              taken care of. I then received a call to take me around the
+              interface.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-section__card card-reviews card-reviews--second">
+          <div class="card-reviews__photo">
+            <img
+              class="card-reviews__img"
+              src="./assets/svg/ava-2.svg"
+              alt="avatar"
+            />
+          </div>
+          <div class="card-reviews__avatar">
+            <p class="card-reviews__name">Kautilya Reddy</p>
+            <p class="card-reviews__email">@reddyzzz</p>
+            <p class="card-reviews__review">
+              Loved the onboarding experience!... As soon as I signed up...I got
+              a call regarding my verification procedure, which was also swiftly
+              taken care of. I then received a call to take me around the
+              interface.
+            </p>
+          </div>
+        </div>
+        <div class="reviews-section__card card-reviews">
+          <div class="card-reviews__photo">
+            <img
+              class="card-reviews__img"
+              src="./assets/svg/ava-3.svg"
+              alt="avatar"
+            />
+          </div>
+          <div class="card-reviews__avatar">
+            <p class="card-reviews__name">Pablo Colling</p>
+            <p class="card-reviews__email">@reddyzzz</p>
+            <p class="card-reviews__review">
+              I have just needed help from the support and Jose O. that assisted
+              me, he was very helpful and polite and managed to fix my problem
+              quite fast. Very happy with my results so far!
+            </p>
+          </div>
+        </div>
+        <div class="reviews-section__card card-reviews">
+          <div class="card-reviews__photo">
+            <img
+              class="card-reviews__img"
+              src="./assets/svg/ava-4.svg"
+              alt="avatar"
+            />
+          </div>
+          <div class="card-reviews__avatar">
+            <p class="card-reviews__name">Tom Smith</p>
+            <p class="card-reviews__email">@reddyzzz</p>
+            <p class="card-reviews__review">
+              I have just needed help from the support and Jose O. that assisted
+              me, he was very helpful and polite and managed to fix my problem
+              quite fast. Very happy with my results so far!
+            </p>
+          </div>
+        </div>
+        <div class="reviews-section__card card-reviews card-reviews--end">
+          <div class="card-reviews__photo">
+            <img
+              class="card-reviews__img"
+              src="./assets/svg/ava-5.svg"
+              alt="avatar"
+            />
+          </div>
+          <div class="card-reviews__avatar">
+            <p class="card-reviews__name">Ann Wise</p>
+            <p class="card-reviews__email">@reddyzzz</p>
+            <p class="card-reviews__review">
+              I have just needed help from the support and Jose O. that assisted
+              me, he was very helpful and polite and managed to fix my problem
+              quite fast. Very happy with my results so far!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news-section container">
+      <p class="news-section__caption caption">Powerful tools</p>
+      <p class="news-section__title title">Сryptoriance in the news</p>
+      <div class="news-section__slider">
+        <div class="card-news card-news--first">
+          <div class="card-news__content">
+            <p class="card-news__title">Cryptorio Web App is Here!</p>
+            <p class="card-news__description">
+              In this post, we’ll summarize the developments across Cindicator’s
+              products in Q2 2021: Сryptorio, the Hybrid Intelligence platform,
+              SuperForecasters, and Macro Sentiment Indicators. Now they can use
+              Сryptorio as a new web app!
+            </p>
+            <p class="card-news__date">31 July 2021 · News</p>
+          </div>
+          <a class="card-news__button">Read more</a>
+        </div>
+        <div class="card-news">
+          <div class="card-news__content">
+            <p class="card-news__title">Cryptorio Web App is Here!</p>
+            <p class="card-news__description">
+              In this post, we’ll summarize the developments across Cindicator’s
+              products in Q2 2021: Сryptorio, the Hybrid Intelligence platform,
+              SuperForecasters, and Macro Sentiment Indicators. Now they can use
+              Сryptorio as a new web app!
+            </p>
+            <p class="card-news__date">31 July 2021 · News</p>
+          </div>
+          <a class="card-news__button">Read more</a>
+        </div>
+        <div class="card-news">
+          <div class="card-news__content">
+            <p class="card-news__title">Cryptorio Web App is Here!</p>
+            <p class="card-news__description">
+              In this post, we’ll summarize the developments across Cindicator’s
+              products in Q2 2021: Сryptorio, the Hybrid Intelligence platform,
+              SuperForecasters, and Macro Sentiment Indicators. Now they can use
+              Сryptorio as a new web app!
+            </p>
+            <p class="card-news__date">31 July 2021 · News</p>
+          </div>
+          <a class="card-news__button">Read more</a>
+        </div>
+        <div class="card-news">
+          <div class="card-news__content">
+            <p class="card-news__title">Cryptorio Web App is Here!</p>
+            <p class="card-news__description">
+              In this post, we’ll summarize the developments across Cindicator’s
+              products in Q2 2021: Сryptorio, the Hybrid Intelligence platform,
+              SuperForecasters, and Macro Sentiment Indicators. Now they can use
+              Сryptorio as a new web app!
+            </p>
+            <p class="card-news__date">31 July 2021 · News</p>
+          </div>
+          <a class="card-news__button">Read more</a>
+        </div>
+        <div class="card-news">
+          <div class="card-news__content">
+            <p class="card-news__title">Cryptorio Web App is Here!</p>
+            <p class="card-news__description">
+              In this post, we’ll summarize the developments across Cindicator’s
+              products in Q2 2021: Сryptorio, the Hybrid Intelligence platform,
+              SuperForecasters, and Macro Sentiment Indicators. Now they can use
+              Сryptorio as a new web app!
+            </p>
+            <p class="card-news__date">31 July 2021 · News</p>
+          </div>
+          <a class="card-news__button">Read more</a>
+        </div>
+        <div class="card-news card-news--end">
+          <div class="card-news__content">
+            <p class="card-news__title">Cryptorio Web App is Here!</p>
+            <p class="card-news__description">
+              In this post, we’ll summarize the developments across Cindicator’s
+              products in Q2 2021: Сryptorio, the Hybrid Intelligence platform,
+              SuperForecasters, and Macro Sentiment Indicators. Now they can use
+              Сryptorio as a new web app!
+            </p>
+            <p class="card-news__date">31 July 2021 · News</p>
+          </div>
+          <a class="card-news__button">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section class="cryptocurrency-section">
+      <img
+        class="cryptocurrency-section__bg"
+        src="./assets/svg/crypto-bg.png"
+        alt="bg"
+      />
+      <p class="cryptocurrency-section__title title container">
+        A simple, secure way to buy and sell cryptocurrency
+      </p>
+      <p class="cryptocurrency-section__subtitle subtitle container">
+        Trade bitcoin and other cryptos in 3 minutes.
+      </p>
+      <button class="button cryptocurrency-section__button">
+        <svg class="button__img">
+          <use xlink:href="#arrow-button" />
+        </svg>
+        Get started now
+      </button>
+    </section>
+    <footer class="footer container">
+      <a class="footer__logo logo" href="#top"
+        ><img class="logo__img" src="./assets/svg/Logo.svg" alt="logo"
+      /></a>
+      <div class="footer__wrapper">
+        <a class="footer__text">Term of Use</a>
+        <a class="footer__text">Privacy Policy</a>
+        <p class="footer__date">© 2021 All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- SVG -->
+    <svg style="display: none">
+      <symbol
+        id="arrow-button"
+        viewBox="0 0 14 10"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.34643 0.507159C7.61863 0.194937 8.09239 0.162487 8.40462 0.434681L12.9929 4.43468C13.1562 4.57711 13.25 4.78326 13.25 5.00001C13.25 5.21676 13.1562 5.42291 12.9929 5.56534L8.40462 9.56534C8.09239 9.83753 7.61863 9.80509 7.34643 9.49286C7.07424 9.18064 7.10669 8.70687 7.41891 8.43468L10.4984 5.75001H1.5C1.08579 5.75001 0.75 5.41422 0.75 5.00001C0.75 4.5858 1.08579 4.25001 1.5 4.25001H10.4984L7.41891 1.56534C7.10669 1.29315 7.07424 0.819382 7.34643 0.507159Z"
+        />
+      </symbol>
+    </svg>
   </body>
 </html>

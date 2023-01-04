@@ -1,0 +1,42 @@
+@use 'utils';
+
+.slider-section {
+  padding-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+
+  @include utils.media('tablet') {
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: 38px;
+    @include utils.media('tablet') {
+      text-align: center;
+      margin-bottom: 103px;
+    }
+  }
+  &__caption {
+    margin-bottom: 24px;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 35px;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+}
