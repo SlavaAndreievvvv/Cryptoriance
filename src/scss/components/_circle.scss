@@ -70,7 +70,7 @@
     top: 43px;
     left: 184px;
     transform: rotate(117deg);
-    animation-delay: 3s;
+    animation-delay: 6s;
     @include utils.media('tablet-wide') {
       top: 68px;
       left: 274px;
@@ -80,7 +80,7 @@
     top: 198px;
     left: 95px;
     transform: rotate(240deg);
-    animation-delay: 4s;
+    animation-delay: 7s;
     @include utils.media('tablet-wide') {
       top: 289px;
       left: 135px;
@@ -90,7 +90,7 @@
     top: 43px;
     left: 6px;
     transform: rotate(2deg);
-    animation-delay: 5s;
+    animation-delay: 8s;
     @include utils.media('tablet-wide') {
       top: 68px;
       left: 6px;
