@@ -1,0 +1,57 @@
+@use 'utils';
+
+.button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 19px;
+  height: 48px;
+  border-radius: 7px;
+  background: utils.$color-blue-2;
+  border: none;
+  outline: none;
+  @include utils.text(utils.rem(16px), 400, utils.$color-white, 19px);
+  &:focus {
+    outline: 1px solid utils.$color-white;
+  }
+  &__img {
+    width: 14px;
+    height: 10px;
+    margin-left: 15px;
+    fill: utils.$color-white;
+
+    &--secondary {
+      width: 14px;
+      height: 10px;
+      margin-left: 15px;
+      fill: utils.$color-white;
+      transition: all .3s ease;
+    }
+  }
+  &--secondary {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: utils.$color-bg;
+    transition: all .3s ease;
+    @include utils.text(utils.rem(16px), 400, utils.$color-white, 19px);
+
+    &:hover {
+      color: utils.$color-blue;
+    }
+    &:hover > .button__img--secondary {
+      fill: utils.$color-blue;
+    }
+    &:focus {
+      outline: 1px solid utils.$color-blue;
+      color: utils.$color-white;
+    }
+    &:focus > .button__img--secondary {
+      fill: utils.$color-white;
+    }
+  }
+}

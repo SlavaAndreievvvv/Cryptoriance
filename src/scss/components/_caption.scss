@@ -1,0 +1,10 @@
+@use 'utils';
+
+.caption {
+  letter-spacing: 0.02em;
+  text-transform: uppercase;    
+  @include utils.text(utils.rem(16px), 500, utils.$color-blue, 140%);
+  @include utils.media('tablet') {
+    text-align: center;
+  }
+}

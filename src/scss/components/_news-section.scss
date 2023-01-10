@@ -1,0 +1,36 @@
+@use 'utils';
+
+
+.news-section {
+  padding-bottom: 160px;
+
+  &__title {
+    margin-bottom: 48px;
+    text-align: center;
+  }
+  &__caption {
+    margin-bottom: 24px;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    @include utils.media('tv-wide') {
+      justify-content: center;
+    }
+  }
+}

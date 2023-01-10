@@ -1,9 +1,17 @@
 @use 'utils';
 
 .title {
-  text-align: center;
-  @include utils.text(utils.rem(32px), 700, utils.$color-white);
+  font-weight: 500;
+  font-family: utils.$primary-font;
+  font-size: utils.rem(28px);
+  line-height: 33px;
+  background: utils.$gradient-title;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   @include utils.media('tablet') {
-    font-size: utils.rem(42px);
+    font-size: utils.rem(40px);
+    line-height: 140%;
   }
 }

@@ -1,5 +1,6 @@
 @use 'variables' as v;
 
+
 *,
 *:after,
 *::before {
@@ -10,15 +11,19 @@
 html {
   font-size: v.$base-font-size;
   background-color: v.$color-bg;
+  overflow-x: hidden;
 }
 
 body {
   font-family: v.$primary-font;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100%;
-  max-width: calc(800px + v.$mobile-container-padding-x);
+  max-width: calc(1238px + v.$mobile-container-padding-x);
   padding: {
     left: v.$mobile-container-padding-x;
     right: v.$mobile-container-padding-x;
@@ -27,4 +32,10 @@ body {
     left: auto;
     right: auto;
   }
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
 }

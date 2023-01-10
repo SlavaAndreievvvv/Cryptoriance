@@ -1,8 +1,34 @@
+
 @use './config/normalize';
 @use './config/reset';
 @use './config/common';
 
 // Components
+@use './components/button';
+@use './components/subtitle';
 @use './components/title';
-@use './components/cover';
-@use './components/index-page';
+@use './components/caption';
+@use './components/burger';
+@use './components/logo';
+@use './components/navigation';
+@use './components/menu';
+@use './components/header';
+@use './components/hero-section';
+@use './components/card';
+@use './components/slider-section';
+@use './components/circle';
+@use './components/crypto-ease';
+@use './components/crypto-revolution';
+@use './components/crypto-pro';
+@use './components/features-section';
+@use './components/tools';
+@use './components/trade-section';
+@use './components/card-reviews';
+@use './components/reviews-section';
+@use './components/card-news';
+@use './components/news-section';
+@use './components/cryptocurrency-section';
+@use './components/footer';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
