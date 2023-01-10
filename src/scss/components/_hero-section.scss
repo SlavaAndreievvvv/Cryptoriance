@@ -118,7 +118,8 @@
       height: 100px;
     }
     @include utils.media('desktop-wide') {
-      top: 512px;
+      top: 460px;
+      left: -441px;
     }
 
     
@@ -161,10 +162,10 @@
       left: -672px;
     }
     @include utils.media('desktop-wide') {
-      width: 2823.5px;
-      height: 391.7px;
-      top: 247.6px;
-      left: -1100px;
+      width: 2112px;
+      height: 442.7px;
+      top: 337.6px;
+      left: -725px;
     }
   }
 }
