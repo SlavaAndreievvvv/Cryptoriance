@@ -29,5 +29,8 @@
     &::-webkit-scrollbar {
       width: 0;
     }
+    @include utils.media('tv-wide') {
+      justify-content: center;
+    }
   }
 }

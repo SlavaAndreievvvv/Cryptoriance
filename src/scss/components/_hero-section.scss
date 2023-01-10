@@ -86,6 +86,9 @@
       width: 100px;
       height: 100px;
     }
+    @include utils.media('desktop-wide') {
+      top: 618px;
+    }
   }
   &__ethereum {
     width: 40px;
@@ -113,6 +116,9 @@
       left: -322px;
       width: 100px;
       height: 100px;
+    }
+    @include utils.media('desktop-wide') {
+      top: 512px;
     }
 
     
@@ -153,6 +159,12 @@
       height: 391.7px;
       top: 247.6px;
       left: -672px;
+    }
+    @include utils.media('desktop-wide') {
+      width: 40000px;
+      height: 100%;
+      top: 197.6px;
+      left: -19600px;
     }
   }
 }

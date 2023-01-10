@@ -1,46 +1,13 @@
 @use 'utils';
 
-.crypto-block {
+.crypto-revolution {
   &__title {
     margin-bottom: 24px;
   }
   &__subtitle {
     margin-bottom: 26.5px;
   }
-
-  &-1 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 160px;
-  @include utils.media('tablet-wide') {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 190px;
-  }
-    &__content {
-      max-width: 498px;
-      width: 100%;
-      height: 100%;
-      margin-bottom: 99.5px;
-      @include utils.media('tablet-wide') {
-        margin-bottom: 0;
-      }
-    }
-    &__subtitle {
-      width: 100%;
-      @include utils.media('tablet-wide') {
-        max-width: 360px;
-        width: 100%;
-      }
-    }
-  }
-
-  &-2 {
-    padding-bottom: 192px;
+  padding-bottom: 192px;
     display: flex;
     flex-direction: column;
     @include utils.media('tablet-wide') {
@@ -95,38 +62,4 @@
           }
         }
     }
-  }
-
-  &-3 {
-      display: flex;
-      flex-direction: column;
-      @include utils.media('tablet-wide') {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-    &__content {
-      margin-bottom: 53.5px;
-      @include utils.media('tablet-wide') {
-        max-width: 498px;
-        width: 100%;
-      }
-    }
-    &__img {
-      width: 313px;
-      height: 313px;
-      margin-left: auto;
-      margin-right: auto;
-      background-image: url(/src/assets/svg/converter-once.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      @include utils.media('tablet-wide') {
-        width: 440px;
-        height: 480px;
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-  }
 }

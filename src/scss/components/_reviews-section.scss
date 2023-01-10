@@ -23,5 +23,8 @@
     &::-webkit-scrollbar {
       width: 0;
     }
+    @include utils.media('tv-medium') {
+      justify-content: center;
+    }
   }
 }

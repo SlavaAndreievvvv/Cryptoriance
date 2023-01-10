@@ -29,7 +29,7 @@
       font-size: utils.rem(20px);
     }
   }
-  &__text--1 {
+  &__text--investment {
     top: -35px;
     left: 71px;
     @include utils.media('tablet-wide') {
@@ -37,7 +37,7 @@
       left: 105px;
     }
   }
-  &__text--2 {
+  &__text--tracking {
     top: 142px;
     left: 226px;
     @include utils.media('tablet-wide') {
@@ -45,7 +45,7 @@
       left: 337px;  
     }
   }
-  &__text--3 {
+  &__text--output {
     top: 142px;
     left: -64px;
     @include utils.media('tablet-wide') {
@@ -66,7 +66,7 @@
       height: 36px;
     }
   }
-  &__arrow--1 {
+  &__arrow--right {
     top: 43px;
     left: 184px;
     transform: rotate(117deg);
@@ -76,7 +76,7 @@
       left: 274px;
     }
   }
-  &__arrow--2 {
+  &__arrow--bottom {
     top: 198px;
     left: 95px;
     transform: rotate(240deg);
@@ -86,7 +86,7 @@
       left: 135px;
     }
   }
-  &__arrow--3 {
+  &__arrow--left {
     top: 43px;
     left: 6px;
     transform: rotate(2deg);
@@ -129,7 +129,7 @@
       }
     }
   }
-  &__num--1 {
+  &__num--first {
     top: -13px;
     left: 91px;
     animation: pulsing 2s infinite 1s;
@@ -138,7 +138,7 @@
       left: 139px;
     }
   }
-  &__num--2 {
+  &__num--second {
     top: 137px;
     left: 194px;
     animation: pulsing 2s infinite 2s;
@@ -147,7 +147,7 @@
       left: 282px;
     }
   }
-  &__num--3 {
+  &__num--third {
     top: 137px;
     left: -8px;
     animation: pulsing 2s infinite 4s;
