@@ -61,7 +61,7 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 414px;
+    top: 372px;
     left: 253px;
     animation: fadeIn;
     opacity: 0;
@@ -69,32 +69,33 @@
     animation-delay: 5.5s;
     animation-fill-mode: both;
     @include utils.media('phone-wide') {
-      top: 397px;
-      left: 322px;
+      top: 370px;
+      left: 392px;
     }
     @include utils.media('tablet-small'){
-      top: 480px;
-      left: 500px;
+      top: 412px;
+      left: 549px;
     }
     @include utils.media('tablet') {
-      top: 527px;
-      left: 591px; 
+      top: 483px;
+      left: 612px; 
     }
     @include utils.media('tablet-wide') {
-      top: 590px;
-      left: 633px;
+      top: 564px;
+      left: 390px;
       width: 100px;
       height: 100px;
     }
     @include utils.media('desktop-wide') {
       top: 618px;
+      left: 610px;
     }
   }
   &__ethereum {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 242px;
+    top: 171px;
     left: 0;
     animation: fadeIn;
     opacity: 0;
@@ -102,18 +103,18 @@
     animation-delay: 5s;
     animation-fill-mode: both;
     @include utils.media('phone-wide') {
-      top: 324px;
+      top: 182px;
       left: 56px;
     }
     @include utils.media('tablet-small') {
-      top: 433px;
+      top: 268px;
     }
     @include utils.media('tablet') {
-      top: 485px;
+      top: 404px;
     }
     @include utils.media('tablet-wide') {
-      top: 461px;
-      left: -322px;
+      top: 452px;
+      left: -433px;
       width: 100px;
       height: 100px;
     }
@@ -156,9 +157,9 @@
       left: -3px;
     }
     @include utils.media('tablet-wide') {
-      width: 1823.5px;
-      height: 391.7px;
-      top: 247.6px;
+      width: 1715.5px;
+      height: 341.7px;
+      top: 377.6px;
       left: -672px;
     }
     @include utils.media('desktop-wide') {
