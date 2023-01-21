@@ -37,6 +37,9 @@
     @include utils.text(utils.rem(14px), 400, utils.$color-grey-2, 17px);
     @include utils.media ('tablet') {
       margin-right: 32px;
+      &:hover {
+       color: utils.$color-white; 
+      }
     }
   }
   &__date {

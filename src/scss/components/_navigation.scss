@@ -17,8 +17,9 @@
 
       &:hover {
         color: utils.$color-blue-2;
+        outline: 1px solid transparent;
       }
-      &:focus {
+      &:active {
         outline: 1px solid utils.$color-blue-2;
       }
     }
