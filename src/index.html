@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cryptoriance</title>
     <link rel="stylesheet" href="./scss/style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <header class="header header--fixed header--top container">
       <a class="logo" href="#top"
         ><img class="logo__img" src="./assets/svg/Logo.svg" alt="logo"
@@ -44,13 +53,29 @@
     <div class="wrapper">
       <section class="hero-section container" id="top">
         <div class="hero-section__content">
-          <h1 class="title hero-section__title">Be the part of revolution</h1>
-          <p class="subtitle hero-section__subtitle">
+          <h1
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            class="title hero-section__title"
+          >
+            Be the part of revolution
+          </h1>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+            class="subtitle hero-section__subtitle"
+          >
             Join the world’s most comprehensive and secure trading platform. Buy
             and sell Bitcoin, Ethereum, XRP and many other cryptocurrencies with
             fiat or crypto.
           </p>
-          <button class="button hero-section__button">
+          <button
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="1800"
+            class="button hero-section__button"
+          >
             <svg
               class="button__img"
               viewBox="0 0 14 10"
@@ -88,8 +113,19 @@
       </section>
     </div>
     <section class="slider-section container">
-      <p class="caption slider-section__caption">Features</p>
-      <h2 class="title slider-section__title">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="caption slider-section__caption"
+      >
+        Features
+      </p>
+      <h2
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="1000"
+        class="title slider-section__title"
+      >
         Every revolution needs a leader
       </h2>
       <div class="slider-section__slider">
@@ -125,15 +161,29 @@
     <section class="features-section container">
       <div class="features-section__crypto-ease crypto-ease">
         <div class="crypto-ease__content">
-          <h3 class="crypto-ease__title title">
+          <h3
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            class="crypto-ease__title title"
+          >
             Cryptoriance is easy and straightforward
           </h3>
-          <p class="crypto-ease__subtitle subtitle">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="1000"
+            class="crypto-ease__subtitle subtitle"
+          >
             We value our customers very much, so we made the application as easy
             to understand and easy to use as possible. In a short time, you can
             become a professional level specialist
           </p>
-          <button class="crypto-ease__button button--secondary">
+          <button
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-delay="1600"
+            class="crypto-ease__button button--secondary"
+          >
             <svg
               class="button__img--secondary"
               viewBox="0 0 14 10"
@@ -146,7 +196,12 @@
             Go to swap now
           </button>
         </div>
-        <div class="crypto-ease__circle circle">
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="2000"
+          data-aos-delay="1000"
+          class="crypto-ease__circle circle"
+        >
           <p class="circle__text circle__text--investment">Investment</p>
           <p class="circle__text circle__text--tracking">Tracking</p>
           <p class="circle__text circle__text--output">Output</p>
@@ -184,16 +239,30 @@
       </div>
       <div class="feature-section__crypto-revolution crypto-revolution">
         <div class="crypto-revolution__content">
-          <h4 class="crypto-revolution__title title">
+          <h4
+            data-aos="fade-down"
+            data-aos-duration="2500"
+            class="crypto-revolution__title title"
+          >
             Now a new revolution is starting called DeFi
           </h4>
-          <p class="crypto-revolution__subtitle subtitle">
+          <p
+            data-aos="fade-down"
+            data-aos-duration="2500"
+            data-aos-delay="1000"
+            class="crypto-revolution__subtitle subtitle"
+          >
             Most of the existing DeFi are built on the Ethereum blockchain and
             the number of new applications in the field of decentralized finance
             is steadily growing. So, in early February, the number of Ethereum
             blocked on smart contracts for DeFi applications reached $ 938.
           </p>
-          <button class="crypto-revolution__button button--secondary">
+          <button
+            data-aos="fade-down"
+            data-aos-duration="2500"
+            data-aos-delay="1500"
+            class="crypto-revolution__button button--secondary"
+          >
             <svg
               class="button__img--secondary"
               viewBox="0 0 14 10"
@@ -206,23 +275,42 @@
             Let`s try now
           </button>
         </div>
-        <div class="crypto-revolution__img">
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          data-aos-delay="1000"
+          class="crypto-revolution__img"
+        >
           <div class="crypto-revolution__img-converter"></div>
           <div class="crypto-revolution__img-converter-behined"></div>
         </div>
       </div>
       <div class="feature-section__crypto-pro crypto-pro">
         <div class="crypto-pro__content">
-          <h5 class="crypto-pro__title title">
+          <h5
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            class="crypto-pro__title title"
+          >
             Try to swap easily and quickly crypto like a PRO
           </h5>
-          <p class="crypto-pro__subtitle subtitle">
+          <p
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            data-aos-delay="1000"
+            class="crypto-pro__subtitle subtitle"
+          >
             Cryptorio has the ability to launch new pools as it is an automated
             market maker that can utilize smart routing and can give its clients
             the best swapping rates, slippage and price impact that is
             avialable.
           </p>
-          <button class="crypto-pro__button button--secondary">
+          <button
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            data-aos-delay="1500"
+            class="crypto-pro__button button--secondary"
+          >
             <svg
               class="button__img--secondary"
               viewBox="0 0 14 10"
@@ -235,40 +323,89 @@
             Go to swap now
           </button>
         </div>
-        <div class="crypto-pro__img"></div>
+        <div
+          data-aos="zoom-in-left"
+          data-aos-duration="2000"
+          data-aos-delay="1000"
+          class="crypto-pro__img"
+        ></div>
       </div>
     </section>
     <section class="trade-section">
-      <p class="caption trade-section__caption container">Powerful tools</p>
-      <h1 class="title trade-section__title container">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="caption trade-section__caption container"
+      >
+        Powerful tools
+      </p>
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="1500"
+        class="title trade-section__title container"
+      >
         Trade with confidence
       </h1>
-      <p class="subtitle trade-section__subtitle container">
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="2000"
+        class="subtitle trade-section__subtitle container"
+      >
         Trade our spot and margin markets with advanced funding options,
         lightning fast execution and deep liquidity.
       </p>
-      <form class="trade-section__tools tools container">
-        <label class="tools__label">
-          <input class="tools__radio" type="radio" name="tools" checked />
-          <span class="tools__line"></span>
-          <span class="tools__text">Key features</span>
-        </label>
-        <label class="tools__label">
-          <input class="tools__radio" type="radio" name="tools" />
-          <span class="tools__line"></span>
-          <span class="tools__text">Asset classes</span>
-        </label>
-        <label class="tools__label">
-          <input class="tools__radio" type="radio" name="tools" />
-          <span class="tools__line"></span>
-          <span class="tools__text">Interface</span>
-        </label>
-      </form>
+      <div
+        data-aos="flip-up"
+        data-aos-duration="2000"
+        data-aos-delay="1000"
+        id="tabs"
+        class="trade-section__tools tools container"
+      >
+        <button
+          data-aos="flip-up"
+          data-aos-duration="2700"
+          data-aos-delay="2000"
+          class="tools__text active"
+        >
+          Key features
+        </button>
+        <button
+          data-aos="flip-up"
+          data-aos-duration="2700"
+          data-aos-delay="2000"
+          class="tools__text"
+        >
+          Asset classes
+        </button>
+        <button
+          data-aos="flip-up"
+          data-aos-duration="2700"
+          data-aos-delay="2000"
+          class="tools__text"
+        >
+          Interface
+        </button>
+      </div>
       <div class="tools__tablet-line"></div>
-      <div class="tools__img"></div>
+      <div
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
+        data-aos-delay="1000"
+        id="tabs-view"
+      >
+        <div class="tools__img tools__img--key-features active"></div>
+        <div class="tools__img tools__img--asset-classes"></div>
+        <div class="tools__img tools__img--interface"></div>
+      </div>
     </section>
     <section class="reviews-section container">
-      <h1 class="reviews-section__title title">
+      <h1
+        data-aos="fade-left"
+        data-aos-duration="2000"
+        class="reviews-section__title title"
+      >
         We are only as good, as our clients say we are
       </h1>
       <div class="reviews-section__slider slider-reviews">
@@ -367,8 +504,21 @@
       </div>
     </section>
     <section class="news-section container">
-      <p class="news-section__caption caption">Powerful tools</p>
-      <p class="news-section__title title">Сryptoriance in the news</p>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        class="news-section__caption caption"
+      >
+        Powerful tools
+      </p>
+      <p
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="1000"
+        class="news-section__title title"
+      >
+        Сryptoriance in the news
+      </p>
       <div class="news-section__slider">
         <div class="card-news card-news--first">
           <div class="card-news__content">
@@ -451,13 +601,27 @@
       </div>
     </section>
     <section class="cryptocurrency-section">
-      <p class="cryptocurrency-section__title title container">
+      <p
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="cryptocurrency-section__title title container"
+      >
         A simple, secure way to buy and sell cryptocurrency
       </p>
-      <p class="cryptocurrency-section__subtitle subtitle container">
+      <p
+        data-aos="fade-down"
+        data-aos-duration="1900"
+        data-aos-delay="1000"
+        class="cryptocurrency-section__subtitle subtitle container"
+      >
         Trade bitcoin and other cryptos in 3 minutes.
       </p>
-      <button class="button cryptocurrency-section__button">
+      <button
+        data-aos="fade-down"
+        data-aos-duration="1800"
+        data-aos-delay="1700"
+        class="button cryptocurrency-section__button"
+      >
         <svg
           class="button__img"
           viewBox="0 0 14 10"

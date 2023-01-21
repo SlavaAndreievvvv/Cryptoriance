@@ -1,5 +1,30 @@
 @use 'utils';
 
+#tabs-view div {
+  display: none;
+}
+#tabs-view .active {
+  display: block;
+}
+.tools__text {
+  position: relative;
+}
+.tools__text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 33px;
+   left: 0;
+  background: linear-gradient(91.27deg, #618DFF 0%, #05D7E4 100%);
+  transition: all .3s ease;
+  border-radius: 2px;
+  opacity: 0;
+}
+.active::after {
+  opacity: 1;
+}
+
 .tools {
   display: flex;
   justify-content: space-between;
@@ -8,79 +33,65 @@
     max-width: calc(121px + 132px + 90px + 199px);
   }
 
-  &__label {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
-  &__radio {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    cursor: pointer;
-
-    &:checked + .tools__line {
-      opacity: 1;
-    }
-  }
-  &__line {
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    height: 2px;
-    top: 33px;
-    left: 0;
-    background: linear-gradient(91.27deg, #618DFF 0%, #05D7E4 100%);
-    transition: all .3s ease;
-    border-radius: 2px;
-  }
   &__text {
     @include utils.text(utils.rem(16px), 700, utils.$color-white, 19px);
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
   }
   &__img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 160px;
     width: 375px;
-    height: 206px;
-    background-image: url(/src/assets/svg/key-features.svg);
+    height: 230px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    &--key-features {
+      background-image: url(/src/assets/svg/key-features.svg);
+    }
+    &--asset-classes {
+      background-image: url(/src/assets/svg/asset-classes.svg);
+    }
+    &--interface {
+      background-image: url(/src/assets/svg/interface.svg);
+    }
     @include utils.media('phone') {
       width: 383px;
       height: 225px;
     }
     @include utils.media('phone-wide') {
       width: 470px;
-      height: 266px;
+      height: 290px;
     }
     @include utils.media('tablet-small') {
       width: 640px;
-      height: 361px;
+      height: 400px;
     }
     @include utils.media('tablet') {
       width: 767px;
-      height: 429px;
+      height: 460px;
     }
     @include utils.media('tablet-medium') {
       width: 856px;
-      height: 488px;
+      height: 518px;
     }
     @include utils.media('tablet-wide') {
-      width: 1017px;
-      height: 557px;
+      width: 1070px;
+      height: 644px;
     }
     @include utils.media('desktop') {
       width: 1237px;
       height: 684px;
     }
     @include utils.media('desktop-wide') {
-      width: 1436px;
-      height: 790px;
+      width: 1211px;
+      height: 745px;
     }
   }
   &__tablet-line {
@@ -95,5 +106,14 @@
       margin-top: -9px;
       margin-bottom: 24px;
     }
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform:translateX(0);
   }
 }
