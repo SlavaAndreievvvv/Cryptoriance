@@ -40,8 +40,7 @@
     transform: translateX(-1000vw);
     animation: fadeIn-grafic;
     opacity: 0;
-    animation-duration: 4s;
-    animation-delay: 2s;
+    animation-duration: 2s;
     animation-fill-mode: both;
 
     @include utils.media('tablet-small') {
@@ -65,8 +64,8 @@
     left: 253px;
     animation: fadeIn;
     opacity: 0;
-    animation-duration: 4s;
-    animation-delay: 5.5s;
+    animation-duration: 2s;
+    animation-delay: 1s;
     animation-fill-mode: both;
     @include utils.media('phone-wide') {
       top: 370px;
@@ -99,8 +98,8 @@
     left: 0;
     animation: fadeIn;
     opacity: 0;
-    animation-duration: 4s;
-    animation-delay: 5s;
+    animation-duration: 2s;
+    animation-delay: 1.2s;
     animation-fill-mode: both;
     @include utils.media('phone-wide') {
       top: 182px;
@@ -134,8 +133,8 @@
     z-index: -1;
     animation: fadeIn-line;
     opacity: 0;
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-delay: 1.3s;
     animation-fill-mode: both;
 
     @include utils.media('phone-wide') {
