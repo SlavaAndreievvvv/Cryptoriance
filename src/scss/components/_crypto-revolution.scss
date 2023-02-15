@@ -1,0 +1,65 @@
+@use 'utils';
+
+.crypto-revolution {
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__subtitle {
+    margin-bottom: 26.5px;
+  }
+  padding-bottom: 192px;
+    display: flex;
+    flex-direction: column;
+    @include utils.media('tablet-wide') {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    &__content {
+      margin-bottom: 58.5px;
+      @include utils.media('tablet-wide') {
+        max-width: 440px;
+        width: 100%;
+      }
+    }
+    &__img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      margin-left: 7px;
+      margin-left: auto;
+      margin-right: auto;
+
+        &-converter {
+          width: 232px;
+          height: 228px;
+          background-image: url(/src/assets/svg/converter.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          @include utils.media('tablet-wide') {
+              width: 440px;
+              height: 434px;
+              background-image: url(/src/assets/svg/converter.svg);
+              background-repeat: no-repeat;
+              background-size: cover;
+          }
+        }
+        &-converter-behined {
+          position: absolute;
+          top: 49px;
+          left: 98px;
+          z-index: -1;
+          width: 232px;
+          height: 228px;
+          background-image: url(/src/assets/svg/converter-bellow.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          @include utils.media('tablet-wide') {
+            width: 440px;
+            height: 434px;
+            top: 84px;
+            left: 166px;        
+          }
+        }
+    }
+}

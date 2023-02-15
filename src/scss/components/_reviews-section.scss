@@ -1,0 +1,30 @@
+@use 'utils';
+
+.reviews-section {
+  padding-bottom: 161px;
+  &__title {
+    margin-bottom: 49px;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    @include utils.media('tv-medium') {
+      justify-content: center;
+    }
+  }
+}

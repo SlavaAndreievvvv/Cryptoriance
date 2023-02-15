@@ -1,0 +1,46 @@
+@use 'utils';
+
+.navigation {
+  display: none;
+
+  @include utils.media('tablet') {
+
+    display: block;
+
+    &__link {
+      @include utils.text(utils.rem(14px), 400, utils.$color-white, 16.59px);
+      margin-right: 36px;
+      text-decoration: none;
+      transition: all .5s ease;
+      border-radius: 7px;
+      outline: 1px solid transparent;
+
+      &:hover {
+        color: utils.$color-blue-2;
+        outline: 1px solid transparent;
+      }
+      &:active {
+        outline: 1px solid utils.$color-blue-2;
+      }
+    }
+
+    &__button {
+      @include utils.text(utils.rem(14px), 400, utils.$color-white, 16.59px);
+      padding: 7.5px 16px;
+      outline: 1px solid utils.$color-white;
+      background: utils.$color-black-2;
+      border-radius: 7px;
+      border: none;
+      transition: all .5s ease;
+
+      &:hover {
+        color: utils.$color-blue-2;
+        outline: 1px solid utils.$color-blue-2;
+      }
+      &:focus {
+        color: utils.$color-white;
+        outline: 1px solid utils.$color-blue-2;
+      }
+    }
+  }
+}

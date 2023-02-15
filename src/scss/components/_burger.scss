@@ -1,0 +1,30 @@
+@use 'utils';
+
+.burger {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 12px;
+
+  &__item {
+    margin-top: 3.6px;
+    margin-bottom: 3.6px;
+    transition: opacity 0.7s ease .4s;
+    }
+    &__item,
+    &::after,
+    &::before {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: utils.$color-grey-2;
+      border-radius: 2px;
+    }
+    &::after,
+    &::before {
+      content: "";
+      transition: transform .7s ease, width .5s ease .2s;
+    }
+}

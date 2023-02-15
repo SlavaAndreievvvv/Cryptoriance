@@ -1,0 +1,8 @@
+@use 'utils';
+
+.subtitle {
+@include utils.text(utils.rem(16px), 400, utils.$color-grey-2, 160%);
+@include utils.media('tablet') {
+  font-size: utils.rem(18px);
+}
+}
