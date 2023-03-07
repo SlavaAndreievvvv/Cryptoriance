@@ -81,8 +81,10 @@
       height: 100px;
     }
     @include utils.media("desktop-wide") {
-      top: 935px;
+      top: 740px;
       left: 610px;
+    }
+    @include utils.media("tv-small") {
     }
     @include utils.media("tv-medium") {
       opacity: 0;
@@ -118,8 +120,10 @@
       left: -415px;
     }
     @include utils.media("desktop-wide") {
-      top: 585px;
+      top: 503px;
       left: -602px;
+    }
+    @include utils.media("tv-small") {
     }
     @include utils.media("tv-medium") {
       opacity: 0;
@@ -166,9 +170,11 @@
     }
     @include utils.media("desktop-wide") {
       width: 2400px;
-      height: 503.7px;
-      top: 538.6px;
+      height: 343.7px;
+      top: 483.6px;
       left: -1088px;
+    }
+    @include utils.media("tv-small") {
     }
     @include utils.media("tv-medium") {
       opacity: 0;
