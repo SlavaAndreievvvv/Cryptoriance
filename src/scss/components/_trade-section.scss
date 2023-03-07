@@ -1,20 +1,23 @@
-@use 'utils';
+@use "utils";
 
 .trade-section {
-  padding-bottom: 25px;
+  padding-bottom: 160;
+  @include utils.media("tablet") {
+    padding-bottom: 200px;
+  }
 
   &__caption {
     margin-bottom: 24px;
   }
   &__title {
     margin-bottom: 24px;
-    @include utils.media ('tablet') {
+    @include utils.media("tablet") {
       text-align: center;
     }
   }
   &__subtitle {
     margin-bottom: 47px;
-    @include utils.media ('tablet') {
+    @include utils.media("tablet") {
       text-align: center;
       max-width: 600px;
     }
