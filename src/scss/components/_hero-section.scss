@@ -71,18 +71,22 @@
       left: 580px; //
     }
     @include utils.media("tablet") {
-      top: 483px;
-      left: 612px;
+      top: 762px;
+      left: 755px; //
     }
     @include utils.media("tablet-wide") {
-      top: 564px;
-      left: 390px;
+      top: 617px;
+      left: 408px;
       width: 100px;
-      height: 100px;
+      height: 100px; //
     }
     @include utils.media("desktop-wide") {
-      top: 590px;
+      top: 935px;
       left: 610px;
+    }
+    @include utils.media("tv-medium") {
+      opacity: 0;
+      z-index: -10;
     }
   }
   &__ethereum {
@@ -104,17 +108,21 @@
       top: 350px; //
     }
     @include utils.media("tablet") {
-      top: 404px;
+      top: 748px; //
     }
     @include utils.media("tablet-wide") {
-      top: 452px;
-      left: -433px;
       width: 100px;
       height: 100px;
+      top: 502px;
+      left: -415px; //
     }
     @include utils.media("desktop-wide") {
-      top: 435px;
-      left: -563px;
+      top: 585px;
+      left: -602px;
+    }
+    @include utils.media("tv-medium") {
+      opacity: 0;
+      z-index: -10;
     }
   }
   &__line {
@@ -143,22 +151,26 @@
       left: -233px;
     }
     @include utils.media("tablet") {
-      width: 955px;
+      width: 1200px;
       height: 405px;
-      top: 195px;
-      left: -3px;
+      top: 505px;
+      left: -3px; //
     }
     @include utils.media("tablet-wide") {
-      width: 1715.5px;
-      height: 341.7px;
-      top: 377.6px;
-      left: -672px;
+      width: 1553.5px;
+      height: 470.7px;
+      top: 330.6px;
+      left: -563px; //
     }
     @include utils.media("desktop-wide") {
       width: 2400px;
-      height: 221.7px;
-      top: 437.6px;
+      height: 503.7px;
+      top: 538.6px;
       left: -1088px;
+    }
+    @include utils.media("tv-medium") {
+      opacity: 0;
+      z-index: -10;
     }
   }
 }
