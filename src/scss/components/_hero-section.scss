@@ -55,20 +55,20 @@
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 372px;
-    left: 253px;
+    top: 415px;
+    left: 333px;
     animation: fadeIn;
     opacity: 0;
     animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: both;
     @include utils.media("phone-wide") {
-      top: 370px;
-      left: 392px;
+      top: 544px;
+      left: 468px; //
     }
     @include utils.media("tablet-small") {
-      top: 412px;
-      left: 549px;
+      top: 664px;
+      left: 580px; //
     }
     @include utils.media("tablet") {
       top: 483px;
@@ -97,11 +97,11 @@
     animation-delay: 1.2s;
     animation-fill-mode: both;
     @include utils.media("phone-wide") {
-      top: 182px;
-      left: 56px;
+      top: 250px;
+      left: 10px;
     }
     @include utils.media("tablet-small") {
-      top: 268px;
+      top: 350px; //
     }
     @include utils.media("tablet") {
       top: 404px;
@@ -132,14 +132,14 @@
 
     @include utils.media("phone-wide") {
       width: 955px;
-      height: 245px;
-      top: 195px;
+      height: 362px;
+      top: 241px;
       left: -233px;
     }
     @include utils.media("tablet-small") {
-      width: 1253px;
-      height: 280px;
-      top: 248px;
+      width: 1053px;
+      height: 409px;
+      top: 321px;
       left: -233px;
     }
     @include utils.media("tablet") {
