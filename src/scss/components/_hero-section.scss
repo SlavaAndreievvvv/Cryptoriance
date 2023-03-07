@@ -85,6 +85,7 @@
       left: 610px;
     }
     @include utils.media("tv-small") {
+      top: 839px;
     }
     @include utils.media("tv-medium") {
       opacity: 0;
@@ -124,6 +125,7 @@
       left: -602px;
     }
     @include utils.media("tv-small") {
+      top: 600px;
     }
     @include utils.media("tv-medium") {
       opacity: 0;
@@ -175,6 +177,7 @@
       left: -1088px;
     }
     @include utils.media("tv-small") {
+      top: 583.6px;
     }
     @include utils.media("tv-medium") {
       opacity: 0;
