@@ -1,16 +1,24 @@
-@use 'utils';
+@use "utils";
 
 .hero-section {
   padding-top: 75px;
   height: 100%;
-  @include utils.media('tablet-wide') {
+  @include utils.media("tablet-wide") {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 203px;
   }
-
+  &__content {
+    padding-left: 16px;
+    @include utils.media("tablet-wide") {
+      padding-left: 16px;
+    }
+    @include utils.media("desktop") {
+      padding-left: calc(50% - 610px);
+    }
+  }
 
   &__title {
     margin-bottom: 24px;
@@ -29,32 +37,19 @@
     display: flex;
     justify-content: flex-end;
 
-    @include utils.media('tablet-wide') {
+    @include utils.media("tablet-wide") {
       padding-top: 0;
       padding-bottom: 0;
     }
   }
   &__grafic {
-    width: 527px;
-    height: 303px;
+    width: 100%;
+    height: 100%;
     transform: translateX(-1000vw);
     animation: fadeIn-grafic;
     opacity: 0;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: both;
-
-    @include utils.media('tablet-small') {
-      width: 626px;
-      height: 342px;
-    }
-    @include utils.media('tablet') {
-      width: 732px;
-      height: 403px;
-    }
-    @include utils.media('tablet-wide') {
-      width: 939px;
-      height: 541px;
-    }
   }
   &__bitcoin {
     width: 40px;
@@ -67,25 +62,25 @@
     animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: both;
-    @include utils.media('phone-wide') {
+    @include utils.media("phone-wide") {
       top: 370px;
       left: 392px;
     }
-    @include utils.media('tablet-small'){
+    @include utils.media("tablet-small") {
       top: 412px;
       left: 549px;
     }
-    @include utils.media('tablet') {
+    @include utils.media("tablet") {
       top: 483px;
-      left: 612px; 
+      left: 612px;
     }
-    @include utils.media('tablet-wide') {
+    @include utils.media("tablet-wide") {
       top: 564px;
       left: 390px;
       width: 100px;
       height: 100px;
     }
-    @include utils.media('desktop-wide') {
+    @include utils.media("desktop-wide") {
       top: 590px;
       left: 610px;
     }
@@ -101,28 +96,26 @@
     animation-duration: 2s;
     animation-delay: 1.2s;
     animation-fill-mode: both;
-    @include utils.media('phone-wide') {
+    @include utils.media("phone-wide") {
       top: 182px;
       left: 56px;
     }
-    @include utils.media('tablet-small') {
+    @include utils.media("tablet-small") {
       top: 268px;
     }
-    @include utils.media('tablet') {
+    @include utils.media("tablet") {
       top: 404px;
     }
-    @include utils.media('tablet-wide') {
+    @include utils.media("tablet-wide") {
       top: 452px;
       left: -433px;
       width: 100px;
       height: 100px;
     }
-    @include utils.media('desktop-wide') {
+    @include utils.media("desktop-wide") {
       top: 435px;
       left: -563px;
     }
-
-    
   }
   &__line {
     width: 780px;
@@ -137,31 +130,31 @@
     animation-delay: 1.3s;
     animation-fill-mode: both;
 
-    @include utils.media('phone-wide') {
+    @include utils.media("phone-wide") {
       width: 955px;
       height: 245px;
       top: 195px;
       left: -233px;
     }
-    @include utils.media('tablet-small') {
+    @include utils.media("tablet-small") {
       width: 1253px;
       height: 280px;
       top: 248px;
       left: -233px;
     }
-    @include utils.media('tablet') {
+    @include utils.media("tablet") {
       width: 955px;
       height: 405px;
       top: 195px;
       left: -3px;
     }
-    @include utils.media('tablet-wide') {
+    @include utils.media("tablet-wide") {
       width: 1715.5px;
       height: 341.7px;
       top: 377.6px;
       left: -672px;
     }
-    @include utils.media('desktop-wide') {
+    @include utils.media("desktop-wide") {
       width: 2400px;
       height: 221.7px;
       top: 437.6px;
@@ -191,7 +184,13 @@
   }
 
   50% {
-    opacity: 0.5;
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.7;
   }
 
   100% {
