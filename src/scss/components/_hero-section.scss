@@ -64,21 +64,21 @@
     animation-fill-mode: both;
     @include utils.media("phone-wide") {
       top: 544px;
-      left: 468px; //
+      left: 468px;
     }
     @include utils.media("tablet-small") {
       top: 664px;
-      left: 580px; //
+      left: 580px;
     }
     @include utils.media("tablet") {
       top: 762px;
-      left: 755px; //
+      left: 755px;
     }
     @include utils.media("tablet-wide") {
       top: 617px;
       left: 408px;
       width: 100px;
-      height: 100px; //
+      height: 100px;
     }
     @include utils.media("desktop-wide") {
       top: 935px;
@@ -87,6 +87,7 @@
     @include utils.media("tv-medium") {
       opacity: 0;
       z-index: -10;
+      visibility: hidden;
     }
   }
   &__ethereum {
@@ -105,16 +106,16 @@
       left: 10px;
     }
     @include utils.media("tablet-small") {
-      top: 350px; //
+      top: 350px;
     }
     @include utils.media("tablet") {
-      top: 748px; //
+      top: 748px;
     }
     @include utils.media("tablet-wide") {
       width: 100px;
       height: 100px;
       top: 502px;
-      left: -415px; //
+      left: -415px;
     }
     @include utils.media("desktop-wide") {
       top: 585px;
@@ -123,6 +124,7 @@
     @include utils.media("tv-medium") {
       opacity: 0;
       z-index: -10;
+      visibility: hidden;
     }
   }
   &__line {
@@ -154,13 +156,13 @@
       width: 1200px;
       height: 405px;
       top: 505px;
-      left: -3px; //
+      left: -3px;
     }
     @include utils.media("tablet-wide") {
       width: 1553.5px;
       height: 470.7px;
       top: 330.6px;
-      left: -563px; //
+      left: -563px;
     }
     @include utils.media("desktop-wide") {
       width: 2400px;
@@ -171,6 +173,7 @@
     @include utils.media("tv-medium") {
       opacity: 0;
       z-index: -10;
+      visibility: hidden;
     }
   }
 }
